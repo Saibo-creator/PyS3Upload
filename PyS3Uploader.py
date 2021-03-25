@@ -51,9 +51,3 @@ class S3Uploader:
 
         return res
 
-        # try:
-        #     subprocess.check_output(command, shell=True)
-        #     return 0
-        # except subprocess.CalledProcessError as e:
-        #     print(e.output)
-        #     return 1
