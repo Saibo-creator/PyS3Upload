@@ -48,6 +48,5 @@ class S3Uploader:
             logger.info("S3upload {} failed".format(input_filename))
 
         logger.info("finish to upload {}".format(input_filename))
-
         return res
 
