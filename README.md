@@ -1,6 +1,8 @@
 # PyS3Upload
-need to add `logging_setup.py` at current directory
 
+## dependency
+
+`s3cmd` need to be installed, and .s3cfg should .......
 
 ## Usage
 
@@ -19,10 +21,6 @@ filepath = shutil.make_archive(base_name="images", format='tar', root_dir=img_ro
 
 upload_res = s3Uploader.upload_file(input_filename=filepath, remove=True)
 
-if upload_res == 0:
-    if REMOVE_LOCAL_AFTER_UPLOAD:
-        "S3uploader only remove the .tar files, here we delete the individual images"
-        shutil.rmtree(img_root_dir)
 
 
 ```

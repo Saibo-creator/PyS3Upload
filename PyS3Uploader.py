@@ -49,4 +49,3 @@ class S3Uploader:
 
         logger.info("finish to upload {}".format(input_filename))
         return res
-
